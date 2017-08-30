@@ -108,6 +108,12 @@ function lucky(card1,card2){
                     total21[i]++; 
                 }
             }
+            if(card1[i][0] + card2[i][0] + card1[card1.length-1][0] == 20 || card1[i][0] + card2[i][0] + card1[card1.length-1][0] + 10 == 20){
+                total20[i]++;
+            }
+            if(card1[i][0] + card2[i][0] + card1[card1.length-1][0] == 19 || card1[i][0] + card2[i][0] + card1[card1.length-1][0] + 10 == 19){
+                total19[i]++;
+            }
         }
         else if(card1[i][0] + card2[i][0] + card1[card1.length-1][0] == 21){
             if(card1[i][1] == card2[i][1] && card2[i][1] == card1[card1.length-1][1]){
