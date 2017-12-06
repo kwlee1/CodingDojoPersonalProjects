@@ -50,7 +50,7 @@ function createTable(num){
         total20.push(0);
         total19.push(0);
     }
-    
+    console.log(table); 
     return table; 
 }
 
